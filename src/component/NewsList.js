@@ -13,7 +13,7 @@ const NewsListBlock = styled.div`
 `;
 
 const NewsList = () => {
-  const [articles, setArticles] = useState(null);
+  const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(false);
 
   //데이터 가져오기
@@ -42,13 +42,13 @@ const NewsList = () => {
   if (!articles) {
     return null;
   }
-  console.log(articles);
+
   //article 값 유효
   return (
     <NewsListBlock>
-      {articles.map((article) => {
-        <News key={article.url} article={article} />;
-      })}
+      {articles.map((article) => (
+        <News key={article.url} article={article} />
+      ))}
     </NewsListBlock>
   );
 };

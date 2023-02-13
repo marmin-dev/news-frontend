@@ -1,9 +1,8 @@
 import styled from 'styled-components';
-import palette from '../lib/styles/palette';
 
 const NewsItemBlock = styled.div`
   display: flex;
-  background: ${palette.gray[4]};
+
   .thumbnail {
     margin-right: 1rem;
     img {
