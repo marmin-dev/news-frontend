@@ -1,9 +1,9 @@
-import Header from './component/Header';
+import NewsListPage from './pages/NewsListPage';
 
 const App = () => {
   return (
     <>
-      <Header />
+      <NewsListPage />
     </>
   );
 };

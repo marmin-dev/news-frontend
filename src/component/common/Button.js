@@ -1,6 +1,5 @@
-import { css } from 'cheerio/lib/api/css';
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import palette from '../../lib/styles/palette';
 
 const ButtonStyle = css`
@@ -12,13 +11,13 @@ const ButtonStyle = css`
   color: black;
   outline: 2px;
   cursor: pointer;
-  background-color: ${palette.gray[4]};
+  background-color: ${palette.gray[5]};
   &:hover {
     background: ${palette.gray[7]};
     color: white;
   }
 `;
-const styledButton = styled.button`
+const StyledButton = styled.button`
   ${ButtonStyle}
 `;
 const StyledLink = styled(Link)`
@@ -26,6 +25,6 @@ const StyledLink = styled(Link)`
 `;
 
 const Button = (props) => {
-  return props.to ? <StyledLink {...props} /> : <styledButton {...props} />;
+  return props.to ? <StyledLink {...props} /> : <StyledButton {...props} />;
 };
 export default Button;

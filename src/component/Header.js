@@ -14,7 +14,8 @@ const Wrapper = styled(Responsive)`
   height: 4rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  border-bottom: 2px black solid;
   .logo {
     font-size: 1.125rem;
     font-weight: 800;
@@ -23,6 +24,7 @@ const Wrapper = styled(Responsive)`
   .right {
     display: flex;
     align-items: center;
+    justify-items: flex-end;
   }
 `;
 const Spacer = styled.div`
