@@ -58,12 +58,18 @@ const Navcomponent = styled.li`
 const Spacer = styled.div`
   height: 4rem;
 `;
-const CategoryBar = () => {
+const CategoryBar = ({ onSelect, category }) => {
   return (
     <>
       <NavBar>
         {categories.map((c) => (
-          <Navcomponent key={c.name}>{c.text}</Navcomponent>
+          <Navcomponent
+            key={c.name}
+            active={category === c.name}
+            onClick={() => onSelect(c.name)}
+          >
+            {c.text}
+          </Navcomponent>
         ))}
       </NavBar>
       <Spacer />
