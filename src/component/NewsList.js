@@ -2,6 +2,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
+import palette from '../lib/styles/palette';
 import News from './News';
 
 const NewsListBlock = styled.div`
@@ -10,6 +11,7 @@ const NewsListBlock = styled.div`
   width: auto;
   margin: 0 auto;
   margin-top: 2rem;
+  background-color: ${palette.gray[6]};
 `;
 
 const NewsList = ({ category }) => {

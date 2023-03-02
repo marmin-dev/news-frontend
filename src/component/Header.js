@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import Responsive from './common/Responsive';
 import palette from '../lib/styles/palette';
-import Button from './common/Button';
 
 //헤더블럭
 const HeaderBlock = styled.div`
@@ -36,9 +35,6 @@ const Header = () => {
       <HeaderBlock>
         <Wrapper>
           <div className="logo">MARMIN NEWS</div>
-          <div className="right">
-            <Button>Login</Button>
-          </div>
         </Wrapper>
       </HeaderBlock>
       <Spacer />
